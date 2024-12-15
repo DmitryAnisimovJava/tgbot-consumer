@@ -1,13 +1,11 @@
 package com.dmitryprod.botmessageconsumer;
 
-import com.dmitryprod.botmessageconsumer.bot.registration.TelegramBotProperties;
+import com.dmitryprod.botmessageconsumer.bot.config.TelegramBotProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.sql.Connection;
 
 @SpringBootApplication
 @EnableConfigurationProperties(TelegramBotProperties.class)

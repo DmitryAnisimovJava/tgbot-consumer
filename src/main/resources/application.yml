@@ -1,6 +1,20 @@
 spring.application.name: bot-message-consumer
+
 server:
   port: ${SERVER_PORT}
+
 telegram:
   bot:
     need-registration: true
+
+spring:
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://${DB_HOST}:${DB_EXTERNAL_PORT}/${DB_NAME}
+    hikari:
+      schema: ${DB_DEFAULT_SCHEMA}
+
+  liquibase:
+    liquibase-schema: ${DB_LIQUIBASE_DEFAULT_SCHEMA}
+    default-schema: ${DB_DEFAULT_SCHEMA}

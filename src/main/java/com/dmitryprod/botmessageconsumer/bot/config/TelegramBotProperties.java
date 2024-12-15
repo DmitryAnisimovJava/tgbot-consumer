@@ -1,4 +1,4 @@
-package com.dmitryprod.botmessageconsumer.bot.registration;
+package com.dmitryprod.botmessageconsumer.bot.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
